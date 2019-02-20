@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	ifstream datoteka("automobili.txt"); // DATOTEKU TREBAM SAM KREIRATI TAMO GDJE JE FILE OD OVOG PROGRAMA
+	ifstream datoteka("automobili.txt"); // Datoteku kreiram sam, tamo gdje je ovaj cpp file
 	string s;
 
 	while (getline(datoteka, s))
