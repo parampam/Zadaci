@@ -8,6 +8,7 @@ int main()
 	int n;
 	cout << "Koliko brojeva: ";
 	cin >> n;
+	cin.ignore();
 
 	ofstream n_brojeva("brojevi.txt");
 
