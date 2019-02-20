@@ -4,30 +4,29 @@ using namespace std;
 
 struct Pravokutnik
 {
-	float sirina;
-	float visina;
+	double sirina;
+	double visina;
 };
 
-void povrsina(Pravokutnik pra1, Pravokutnik pra2)
+void povrsina(Pravokutnik pr_jedan, Pravokutnik pr_dva)
 {
-	cout << "Ukupna povrsina je: " << (pra1.sirina * pra1.visina) + (pra2.sirina * pra2.visina) << endl;
+	cout << "Ukupna povrsina je: " << (pr_jedan.sirina * pr_jedan.visina) + (pr_dva.sirina * pr_dva.visina) << endl;
 }
 
 int main()
 {
-	Pravokutnik pra1, pra2;
+	Pravokutnik pr_one, pr_two;
 
-	cout << "Daj mi sirinu za prvi pravokutnik: ";
-	cin >> pra1.sirina;
-	cout << "Daj mi visinu za prvi pravokutnik: ";
-	cin >> pra1.visina;
-	cout << "Daj mi sirinu za drugi pravokutnik: ";
-	cin >> pra2.sirina;
-	cout << "Daj mi visinu za drugi pravokutnik: ";
-	cin >> pra2.visina;
+	cout << "Sirina prvog pravokutnika: ";
+	cin >> pr_one.sirina;
+	cout << "Visina prvog pravokutnika: ";
+	cin >> pr_one.visina;
+	cout << "Sirina drugog pravokutnika: ";
+	cin >> pr_two.sirina;
+	cout << "Visina drugog pravokutnika: ";
+	cin >> pr_two.visina;
 
-	povrsina(pra1, pra2);
-
+	povrsina(pr_one, pr_two);
 
 	return 0;
 }
