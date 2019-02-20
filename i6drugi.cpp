@@ -34,6 +34,7 @@ int main()
 		datoteka << adrese[i].ulica << ", " << adrese[i].kucni_broj << ", " << adrese[i].postanski_broj << endl;
 	}
 
-
+	datoteka.close();
+	
 	return 0;
 }
