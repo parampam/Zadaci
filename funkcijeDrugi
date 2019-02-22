@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int najmanji(int a, int b, int c)
+{
+  if (a < b && a < c)
+    return a;
+  else if (b < a && b < c)
+    return b;
+  else
+    return c;
+}
+
+int main()
+{
+  int a = 10;
+  int b = 30;
+  int c = 100;
+  
+  int lowest;
+  
+  lowest = najmanji(a, b, c);
+  
+  cout << "najmanji je: " << lowest;
+
+  return 0;
+}
