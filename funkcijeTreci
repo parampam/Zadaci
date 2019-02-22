@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+void prosti(int a, int b)
+{
+  bool boolcek = True;
+  if (a < b)
+  {
+    for (int i = a; i <= b; i++)
+    {
+      for (int j = 0; j < i; j++)
+      {
+        if (i / 2 % j == 0)
+          boolcek = False;
+      }
+      if (boolcek == True)
+      {
+        cout << i << "je prost" << endl;
+      }
+      boolcek = True;
+    }
+  }
+  else
+  {
+    for (int i = b; i <= a; i++)
+    {
+      for (int j = 0; j < i; j++)
+      {
+        if (i / 2 % j == 0)
+          boolcek = False;
+      }
+      if (boolcek == True)
+      {
+        cout << i << "je prost" << endl;
+      }
+      boolcek = True;
+    }
+  }
+}
+
+int main()
+{
+  int a, b;
+  
+  cout << "Upisi prvi broj: ";
+  cin >> a;
+  
+  cout << "Upisi drugi broj: ";
+  cin >> b;
+  
+  prosti(a, b);
+  
+  return 0;
+}
